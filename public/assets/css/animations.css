@@ -1,0 +1,700 @@
+/*==================================================
+        MUHAMMAD ABUBAKKAR PORTFOLIO
+        ANIMATIONS.CSS
+==================================================*/
+
+/* Fade In */
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity:0;
+
+    }
+
+    to {
+
+        opacity:1;
+
+    }
+
+}
+
+/* Fade Up */
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(70px);
+
+    }
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Fade Left */
+
+@keyframes fadeLeft {
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-80px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* Fade Right */
+
+@keyframes fadeRight {
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(80px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* Zoom */
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* Rotate */
+
+@keyframes rotateSlow{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* Floating */
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+/* Pulse */
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* Glow */
+
+@keyframes glow{
+
+    0%{
+
+        box-shadow:0 0 10px rgba(0,212,255,.2);
+
+    }
+
+    50%{
+
+        box-shadow:0 0 40px rgba(0,212,255,.6);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 10px rgba(0,212,255,.2);
+
+    }
+
+}
+
+/* Shine */
+
+@keyframes shine{
+
+    from{
+
+        left:-120%;
+
+    }
+
+    to{
+
+        left:120%;
+
+    }
+
+}
+/*==================================================
+        ANIMATION CLASSES
+==================================================*/
+
+/* Fade Up */
+
+.fade-up{
+
+    opacity:0;
+
+    animation:fadeUp 1s ease forwards;
+
+}
+
+/* Fade Left */
+
+.fade-left{
+
+    opacity:0;
+
+    animation:fadeLeft 1s ease forwards;
+
+}
+
+/* Fade Right */
+
+.fade-right{
+
+    opacity:0;
+
+    animation:fadeRight 1s ease forwards;
+
+}
+
+/* Zoom */
+
+.zoom{
+
+    opacity:0;
+
+    animation:zoomIn .9s ease forwards;
+
+}
+
+/* Fade */
+
+.fade{
+
+    animation:fadeIn 1s ease forwards;
+
+}
+
+/* Floating */
+
+.float{
+
+    animation:floating 5s ease-in-out infinite;
+
+}
+
+/* Pulse */
+
+.pulse{
+
+    animation:pulse 2s infinite;
+
+}
+
+/* Glow */
+
+.glow{
+
+    animation:glow 3s infinite;
+
+}
+
+/* Rotate */
+
+.rotate{
+
+    animation:rotateSlow 18s linear infinite;
+
+}
+
+/*==================================================
+        HERO ANIMATIONS
+==================================================*/
+
+.hero .tag{
+
+    animation:fadeLeft .8s ease forwards;
+
+}
+
+.hero h1{
+
+    animation:fadeUp 1s ease forwards;
+
+}
+
+.hero .typing{
+
+    animation:fadeUp 1.2s ease forwards;
+
+}
+
+.hero p{
+
+    animation:fadeUp 1.4s ease forwards;
+
+}
+
+.hero-buttons{
+
+    animation:fadeUp 1.6s ease forwards;
+
+}
+
+.hero-social{
+
+    animation:fadeUp 1.8s ease forwards;
+
+}
+
+.profile-card{
+
+    animation:
+
+        zoomIn 1s ease,
+
+        floating 6s ease-in-out infinite;
+
+}
+
+/*==================================================
+        NAVBAR
+==================================================*/
+
+.header{
+
+    animation:fadeDown .8s ease;
+
+}
+
+@keyframes fadeDown{
+
+    from{
+
+        transform:translateY(-80px);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateY(0);
+
+        opacity:1;
+
+    }
+
+}
+
+/*==================================================
+        BUTTON EFFECTS
+==================================================*/
+
+.btn{
+
+    transition:
+
+        transform .35s,
+
+        box-shadow .35s,
+
+        background .35s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.btn:active{
+
+    transform:scale(.97);
+
+}
+/*==================================================
+        SERVICE CARD ANIMATIONS
+==================================================*/
+
+.service-card{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    animation:fadeUp .9s ease forwards;
+
+}
+
+.service-card:nth-child(1){
+
+    animation-delay:.2s;
+
+}
+
+.service-card:nth-child(2){
+
+    animation-delay:.4s;
+
+}
+
+.service-card:nth-child(3){
+
+    animation-delay:.6s;
+
+}
+
+.service-card:nth-child(4){
+
+    animation-delay:.8s;
+
+}
+
+/*==================================================
+        STAT BOX
+==================================================*/
+
+.stat-box{
+
+    opacity:0;
+
+    animation:zoomIn .8s ease forwards;
+
+}
+
+.stat-box:nth-child(1){
+
+    animation-delay:.2s;
+
+}
+
+.stat-box:nth-child(2){
+
+    animation-delay:.4s;
+
+}
+
+.stat-box:nth-child(3){
+
+    animation-delay:.6s;
+
+}
+
+.stat-box:nth-child(4){
+
+    animation-delay:.8s;
+
+}
+
+/*==================================================
+        TIMELINE
+==================================================*/
+
+.timeline-item{
+
+    opacity:0;
+
+    animation:fadeRight 1s ease forwards;
+
+}
+
+.timeline-item:nth-child(1){
+
+    animation-delay:.3s;
+
+}
+
+.timeline-item:nth-child(2){
+
+    animation-delay:.6s;
+
+}
+
+.timeline-item:nth-child(3){
+
+    animation-delay:.9s;
+
+}
+
+.timeline-item:nth-child(4){
+
+    animation-delay:1.2s;
+
+}
+
+/*==================================================
+        HIGHLIGHT BOX
+==================================================*/
+
+.highlight-box{
+
+    transition:.35s ease;
+
+}
+
+.highlight-box:hover{
+
+    transform:translateY(-12px) scale(1.02);
+
+}
+
+/*==================================================
+        TRUSTED ITEMS
+==================================================*/
+
+.trusted-item{
+
+    transition:.35s;
+
+}
+
+.trusted-item:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/*==================================================
+        FOOTER
+==================================================*/
+
+footer{
+
+    animation:fadeUp 1.2s ease;
+
+}
+
+/*==================================================
+        LOADER ANIMATION
+==================================================*/
+
+.loader{
+
+    animation:fadeIn .6s ease;
+
+}
+
+.loader.hide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.7s;
+
+}
+
+/*==================================================
+        PAGE TRANSITION
+==================================================*/
+
+body{
+
+    animation:fadeIn .8s ease;
+
+}
+
+/*==================================================
+        IMAGE HOVER
+==================================================*/
+
+.profile-card img{
+
+    transition:.45s ease;
+
+}
+
+.profile-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/*==================================================
+        SOCIAL LINKS
+==================================================*/
+
+.hero-social a{
+
+    transition:.35s;
+
+}
+
+.hero-social a:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/*==================================================
+        NAV LINKS
+==================================================*/
+
+.nav-links li{
+
+    transition:.35s;
+
+}
+
+.nav-links li:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/*==================================================
+        SCROLL INDICATOR
+==================================================*/
+
+.scroll-down{
+
+    animation:floating 2.5s ease-in-out infinite;
+
+}
+
+/*==================================================
+        CTA
+==================================================*/
+
+.cta h2{
+
+    animation:fadeUp 1s ease;
+
+}
+
+.cta p{
+
+    animation:fadeUp 1.2s ease;
+
+}
+
+/*==================================================
+        PERFORMANCE
+==================================================*/
+
+.service-card,
+.timeline-item,
+.highlight-box,
+.stat-box,
+.profile-card{
+
+    will-change:transform;
+
+}
+
+/*==================================================
+        REDUCED MOTION SUPPORT
+==================================================*/
+
+@media (prefers-reduced-motion: reduce){
+
+    *{
+
+        animation:none !important;
+
+        transition:none !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}
+
+/*==================================================
+        END OF FILE
+==================================================*/

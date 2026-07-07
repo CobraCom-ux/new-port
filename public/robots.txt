@@ -1,0 +1,10 @@
+# ==========================================
+# robots.txt
+# Portfolio Website - Muhammad Abubakkar
+# ==========================================
+
+User-agent: *
+
+Allow: /
+
+Sitemap: https://myportfolio-302.web.app/sitemap.xml
